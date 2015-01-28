@@ -71,6 +71,7 @@ describe('lib/options', function () {
         sourceFolder: 'src',
         testFolder: 'test',
         templatesFolder: 'templates',
+        buildScriptsFolder: 'build',
         buildFolder: 'dist',
         cssPrecompiler: 'less'
       });
@@ -84,6 +85,7 @@ describe('lib/options', function () {
         sourceFolder: 'client',
         testFolder: 'tests',
         templatesFolder: 'my-templates',
+        buildScriptsFolder: '_build',
         buildFolder: '.out',
         cssPrecompiler: 'sass'
       };
@@ -133,6 +135,12 @@ describe('lib/options', function () {
           name: 'templatesFolder',
           message: 'Which folder should be used for templates?',
           default: 'templates'
+        },
+        {
+          type: 'input',
+          name: 'buildScriptsFolder',
+          message: 'Name your build scripts folder',
+          default: 'build'
         },
         {
           type: 'input',
